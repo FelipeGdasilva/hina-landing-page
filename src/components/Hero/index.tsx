@@ -10,11 +10,11 @@ export default function Hero() {
           className="w-full h-full object-cover animate-pulse opacity-80"
         />
         {/* Camada de Gradiente por Cima para misturar com o fundo do site */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1a0033]/40 to-[#050505] opacity-90"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-transparent via-[#1a0033]/40 to-[#050505] opacity-90"></div>
       </div>
 
       {/* 🥊 Camada 2: Conteúdo (HUD do Jogo) */}
-      <div className="relative z-10 w-full max-w-[1600px] px-8 md:px-20 py-12 flex flex-col items-center text-center">
+      <div className="relative z-10 w-full max-w-7xl px-8 md:px-20 py-12 flex flex-col items-center text-center">
         
         {/* Título Principal com brilho */}
         <h1 className="text-5xl md:text-8xl font-extrabold text-white leading-tight mb-6 mt-20 drop-shadow-[0_0_15px_rgba(0,255,255,0.5)]">
@@ -22,7 +22,7 @@ export default function Hero() {
         </h1>
 
         {/* Descrição em Destaque */}
-        <p className="text-xl md:text-2xl text-gray-200 max-w-[900px] font-medium leading-relaxed mb-12 drop-shadow-md">
+        <p className="text-xl md:text-2xl text-gray-200 max-w-4xl font-medium leading-relaxed mb-12 drop-shadow-md">
           Eu sou a Hina, sua treinadora de emoções. Através do poder do <span className='text-cyan-400 font-bold'>Henshin.AI</span>, ajudo você a nocautear o tédio e encontrar o anime perfeito para cada round da sua vida.
         </p>
 
