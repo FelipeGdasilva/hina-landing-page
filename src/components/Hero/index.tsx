@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
@@ -27,11 +29,12 @@ export default function Hero() {
         </p>
 
         {/* Botão de Ação (Estilo Neon) */}
+     <Link href="/treino">
         <button className="flex items-center gap-3 bg-purple-600 hover:bg-cyan-500 px-10 py-5 text-xl font-extrabold text-white rounded-full transition-all hover:scale-105 active:scale-95 group shadow-[0_0_20px_rgba(147,51,234,0.5)]">
           Começar Treino
           <span className="group-hover:translate-x-2 transition-transform">➜</span>
         </button>
-
+      </Link>
         {/* Marca de Apoio */}
         <div className="mt-16 text-sm font-black tracking-[0.3em] text-gray-500 uppercase">
           Project <span className="text-cyan-400">Hina</span> • Training Facility
