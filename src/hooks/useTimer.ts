@@ -51,21 +51,13 @@ export function useTimer() {
   };
 
   // Esta é a função nova para o seu Seletor de Tempo
-<<<<<<< HEAD
   const mudarConfiguracao = (novoRound: number, novoDescanso: number, roundInicial: number ) => {
-=======
-  const mudarConfiguracao = (novoRound: number, novoDescanso: number) => {
->>>>>>> d8aab225ec1d3c8b964c644b1a1ccffae6c11707
     setAtivo(false);
     setTempoRound(novoRound);
     setTempoDescanso(novoDescanso);
     setSegundos(novoRound);
     setTipo('TREINO');
-<<<<<<< HEAD
     setRoundAtual(roundInicial);
-=======
-    setRoundAtual(1);
->>>>>>> d8aab225ec1d3c8b964c644b1a1ccffae6c11707
   };
 
   return { 
