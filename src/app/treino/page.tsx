@@ -4,13 +4,21 @@ import Link from 'next/link';
 import { useTimer } from '../../hooks/useTimer';
 import { ActionButton } from '../../components/UI/ActionButton';
 import { TimerDisplay } from '../../components/UI/TimerDisplay';
+<<<<<<< HEAD
 import { IntelligencePanel} from '../../components/UI/IntelligencePanel';
+=======
+import { SettingsCard } from '../../components/UI/SettingsCard';
+>>>>>>> d8aab225ec1d3c8b964c644b1a1ccffae6c11707
 export default function TreinoPage() {
   const { ativo, formatarTempo, alternarTimer, tipo, roundAtual, mudarConfiguracao } = useTimer();
 
   return (
     <main className="relative min-h-screen bg-black text-white flex flex-col items-center p-8 overflow-hidden">
+<<<<<<< HEAD
      <IntelligencePanel onSelectMode={mudarConfiguracao} />
+=======
+     <SettingsCard onSelect={mudarConfiguracao} />
+>>>>>>> d8aab225ec1d3c8b964c644b1a1ccffae6c11707
       {/* Detalhes de HUD e Cabeçalho (Mantenha como você já tem) */}
       <header className="w-full max-w-5xl flex justify-between items-center mb-16 border-b border-white/10 pb-6 z-10">
         <div>
@@ -50,10 +58,15 @@ export default function TreinoPage() {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* Brilho de Fundo (Glow Effect) */}
   <div 
   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(90vw,800px)] aspect-square bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none -z-10" 
 />
+=======
+      {/* Efeito de Brilho no Fundo */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cyan-500/5 rounded-full blur-[120px] -z-10 w-[800px] h-[800px]" />
+>>>>>>> d8aab225ec1d3c8b964c644b1a1ccffae6c11707
     </main>
   );
 }
