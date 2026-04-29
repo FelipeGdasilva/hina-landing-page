@@ -1,5 +1,3 @@
-// src/components/ui/TimerDisplay.tsx
-
 interface TimerDisplayProps {
   tempo: string;
   estaAtivo: boolean;

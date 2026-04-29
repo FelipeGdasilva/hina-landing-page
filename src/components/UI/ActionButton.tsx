@@ -1,5 +1,3 @@
-// src/components/ui/ActionButton.tsx
-
 interface ActionButtonProps {
   children: React.ReactNode;
   onClick?: () => void;

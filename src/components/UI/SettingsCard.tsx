@@ -1,5 +1,3 @@
-// src/components/ui/SettingsCard.tsx
-
 interface SettingsCardProps {
   onSelect: (r: number, d: number) => void;
 }
