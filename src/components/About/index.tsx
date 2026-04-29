@@ -18,7 +18,7 @@ export default function About() {
             Desenvolvida nos laboratórios da **Henshin.AI**, Hina não é apenas um modelo de linguagem. Ela foi projetada para ser uma interface emocional ativa, treinada com milhares de horas de combates e narrativas épicas.
           </p>
           <p className="text-gray-400 text-lg leading-relaxed font-bold italic">
-            "Seu humor é o ringue, e eu sou sua treinadora. Vamos nocautear o tédio juntos."
+            "O rinue é seu, a disciplina é nossa. Mantenha a guarda alta e faça cada segundo valer. Round 1... Fight!"
           </p>
         </div>
 
