@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
 export function useTimer() {
-  // Agora os tempos são estados, para podermos mudar no seletor
-  const [tempoRound, setTempoRound] = useState(180); // Padrão 3 min
-  const [tempoDescanso, setTempoDescanso] = useState(60); // Padrão 1 min
+  
+  const [tempoRound, setTempoRound] = useState(180); 
+  const [tempoDescanso, setTempoDescanso] = useState(60); 
 
   const [segundos, setSegundos] = useState(tempoRound);
   const [ativo, setAtivo] = useState(false);
@@ -18,7 +18,7 @@ export function useTimer() {
         setSegundos((s) => s - 1);
       }, 1000);
     } else if (segundos === 0 && ativo) {
-      // Tocar o som do Gongo
+      
       const audio = new Audio('/sounds/Gongo.mp3');
       audio.play().catch(e => console.log("Erro ao tocar som:", e));
 
@@ -50,7 +50,7 @@ export function useTimer() {
     setRoundAtual(1);
   };
 
-  // Esta é a função nova para o seu Seletor de Tempo
+  
   const mudarConfiguracao = (novoRound: number, novoDescanso: number, roundInicial: number ) => {
     setAtivo(false);
     setTempoRound(novoRound);
