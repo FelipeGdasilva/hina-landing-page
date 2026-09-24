@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      {/* Adicionamos o gradiente e o min-h-screen direto no body */}
+      
       <body className="bg-hina-gradient min-h-screen text-white antialiased">
         {children}
       </body>
