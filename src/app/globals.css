@@ -18,7 +18,7 @@
     --foreground: #ededed;
   }
 }
-/* Isso é o CSS raiz que o Next.js carrega */
+
 body {
   background: radial-gradient(circle at center, #1a0033 0%, #050505 100%);
   min-height: 100vh;
