@@ -9,7 +9,7 @@ export default function About() {
     <section className="bg-[#050505] py-24 px-8">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         
-        {/* Lado Esquerdo: Texto de História */}
+        
         <div className="space-y-6">
           <h2 className="text-4xl font-black text-white uppercase tracking-tighter">
             A Origem da <span className="text-cyan-400">Hina</span>
@@ -22,7 +22,7 @@ export default function About() {
           </p>
         </div>
 
-        {/* Lado Direito: Status / Ficha de Personagem */}
+        
         <div className="bg-[#1a1a1a] p-8 rounded-2xl border border-cyan-400/20 shadow-[0_0_30px_rgba(34,211,238,0.1)]">
           <h3 className="text-white font-bold mb-8 uppercase text-center tracking-widest">System Status</h3>
           <div className="space-y-6">
