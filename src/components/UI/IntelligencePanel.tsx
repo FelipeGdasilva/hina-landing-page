@@ -25,7 +25,7 @@ export const IntelligencePanel = ({ onSelectMode }: IntelligencePanelProps) => {
         {PROTOCOLOS.map((p) => (
           <button
             key={p.id}
-            onClick={() => onSelectMode(p.treino *60, p.descanso *60, 1)} // Exemplo: treino em segundos, descanso em segundos, rounds fixos
+            onClick={() => onSelectMode(p.treino *60, p.descanso *60, 1)} 
             className={`flex flex-col items-center justify-center p-3 border border-white/5 bg-black/20 ${p.borda} transition-all duration-300 group`}
           >
             <span className={`text-2xl font-black italic ${p.cor} group-hover:scale-110 transition-transform`}>
