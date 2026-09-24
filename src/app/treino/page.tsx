@@ -11,7 +11,7 @@ export default function TreinoPage() {
   return (
     <main className="relative min-h-screen bg-black text-white flex flex-col items-center p-8 overflow-hidden">
      <IntelligencePanel onSelectMode={mudarConfiguracao} />
-      {/* Detalhes de HUD e Cabeçalho (Mantenha como você já tem) */}
+      
       <header className="w-full max-w-5xl flex justify-between items-center mb-16 border-b border-white/10 pb-6 z-10">
         <div>
           <h1 className="text-3xl font-black italic tracking-tighter text-cyan-400">
@@ -26,14 +26,14 @@ export default function TreinoPage() {
         </Link>
       </header>
 
-      {/* --- CRONÔMETRO CENTRAL (USANDO COMPONENTES UI) --- */}
+      
       <section className="relative z-10 flex-1 flex flex-col items-center justify-center">
         
         <TimerDisplay tempo={formatarTempo()} estaAtivo={ativo} tipo={tipo} />
 
         <div className="text-center mb-10">
        <h2 className="text-4xl font-black uppercase mb-2 text-white">
-    {/* Se for treino, mostra o número do round. Se for descanso, avisa o usuário */}
+    
     {tipo === 'TREINO' ? `Round ${roundAtual.toString().padStart(2, '0')}` : 'Descanso'}
     </h2>
           <p className="text-gray-400 max-w-sm italic text-sm">
@@ -51,7 +51,7 @@ export default function TreinoPage() {
       </section>
 
 
-      {/* Brilho de Fundo (Glow Effect) */}
+  
   <div 
   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(90vw,800px)] aspect-square bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none -z-10" 
      />
